@@ -1,0 +1,34 @@
+.loginSystem {
+    z-index: 3; 
+    display: none;
+}
+
+.profile{
+    z-index: 3; 
+    display: none;
+}
+
+.us{
+    z-index: 3; 
+    display: none;
+}
+
+.goingGreenPage{
+    z-index: 3; 
+    display: none;
+}
+
+.leaderboard{
+    z-index: 3; 
+    display: none;
+}
+
+.inboxPage {
+    z-index: 3;
+    display: none;
+}
+
+.myForest {
+    z-index: 3;
+    display: none;
+}

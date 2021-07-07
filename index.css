@@ -1,0 +1,938 @@
+body{
+    background-color: #14d6ac;
+    color: rgb(165, 159, 159);
+    z-index: -5;
+    min-height: 500px;
+    min-width: 500px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons button{
+    color: rgb(131, 128, 128);
+    background-color: #14d6ac;
+    border: 2px solid #14d6ac;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.buttons button:hover{
+    background-color: #169e81; 
+    color: white;
+}
+
+#RegisterButton{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    z-index: 3;
+}
+
+#LoginButton{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -45%);
+    z-index: 3;
+}
+
+#showHide{
+    display:none;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    margin-left: 100px;
+    transform: translate(-50%, -45%);
+    background-color: white;
+    padding:0;
+    width: 27px;
+    height: 20px;
+    font-size: 13px;
+    border-radius: 7px;
+    line-height: 10px;
+}
+
+#showHide:hover{
+    background-color: lightgray;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #cbb09c;
+}
+
+.circleMenu{
+    background-color: #019e7c;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50vh;
+    z-index: -3;
+}
+
+.circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 75vw;
+    background: white;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.circleText1, .circleText2, .circleText3, .circleText4{
+    z-index: -2;
+    position: absolute;
+    left: 49.5%;
+    top: calc(50vh - 42vw);
+    font-size: 4vw;
+    font-weight: bold;
+}
+.circleText1 span, .circleText2 span, .circleText3 span, .circleText4 span {
+    position: absolute;
+    width: 2vw;
+    height: 43vw;
+    text-align: center;
+    transform-origin: bottom center;
+    color: rgb(224, 221, 221);
+}
+
+.circleText1 span:nth-of-type(1)  {transform: rotate(-120deg);}
+.circleText1 span:nth-of-type(2)  {transform: rotate(-115deg);}
+.circleText1 span:nth-of-type(3)  {transform: rotate(-110deg);}
+.circleText1 span:nth-of-type(4)  {transform: rotate(-105deg);}
+.circleText1 span:nth-of-type(5)  {transform: rotate(-100deg);}
+.circleText1 span:nth-of-type(6)  {transform: rotate(-90deg);}
+.circleText1 span:nth-of-type(7)  {transform: rotate(-85deg);}
+.circleText1 span:nth-of-type(8)  {transform: rotate(-80deg);}
+.circleText1 span:nth-of-type(9)  {transform: rotate(-75deg);}
+.circleText1 span:nth-of-type(10)  {transform: rotate(-70deg);}
+.circleText1 span:nth-of-type(11)  {transform: rotate(-65deg);}
+.circleText1 span:nth-of-type(12)  {transform: rotate(-60deg);}
+.circleText1 span:nth-of-type(13)  {transform: rotate(-55deg);}
+.circleText1 span:nth-of-type(14)  {transform: rotate(-50deg);}
+.circleText1 span:nth-of-type(15)  {transform: rotate(-45deg);}
+
+.circleText2 span:nth-of-type(1)  {transform: rotate(-20deg);}
+.circleText2 span:nth-of-type(2)  {transform: rotate(-15deg);}
+.circleText2 span:nth-of-type(3)  {transform: rotate(-10deg);}
+.circleText2 span:nth-of-type(4)  {transform: rotate(-5deg);}
+.circleText2 span:nth-of-type(5)  {transform: rotate( 0deg);}
+.circleText2 span:nth-of-type(6)  {transform: rotate( 5deg);}
+.circleText2 span:nth-of-type(7)  {transform: rotate( 10deg);}
+.circleText2 span:nth-of-type(8)  {transform: rotate( 15deg);}
+
+.circleText3 span:nth-of-type(1)  {transform: rotate( 45deg);}
+.circleText3 span:nth-of-type(2)  {transform: rotate( 50deg);}
+.circleText3 span:nth-of-type(3)  {transform: rotate( 55deg);}
+.circleText3 span:nth-of-type(4)  {transform: rotate( 60deg);}
+.circleText3 span:nth-of-type(5)  {transform: rotate( 65deg);}
+.circleText3 span:nth-of-type(6)  {transform: rotate( 70deg);}
+.circleText3 span:nth-of-type(7)  {transform: rotate( 75deg);}
+.circleText3 span:nth-of-type(8)  {transform: rotate( 80deg);}
+.circleText3 span:nth-of-type(9)  {transform: rotate( 85deg);}
+.circleText3 span:nth-of-type(10)  {transform: rotate( 90deg);}
+.circleText3 span:nth-of-type(11)  {transform: rotate( 95deg);}
+
+.circleText4 span:nth-of-type(1)  {transform: rotate( 115deg);}
+.circleText4 span:nth-of-type(2)  {transform: rotate( 120deg);}
+.circleText4 span:nth-of-type(3)  {transform: rotate( 125deg);}
+.circleText4 span:nth-of-type(4)  {transform: rotate( 130deg);}
+.circleText4 span:nth-of-type(5)  {transform: rotate( 135deg);}
+
+.menu button{
+    border: none;
+    box-shadow: none;
+    background: none;
+    z-index: 0;
+    outline: none;
+}
+
+#leaderboardIcon{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15vw;
+    height: 15vw;
+}
+
+#leaderboardButton:hover ~ #leaderboardIcon{
+    transition: 1s;
+    background-color: #f7f1f181;
+    border-radius: 50%;
+}
+
+#leaderboardButton{
+    border: none;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15vw;
+    height: 15vw;
+}
+
+#treeIcon{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 15vw;
+}
+
+#treeIconButton:hover ~ #treeIcon{
+    transition: 1s;
+    background-color: #f7f1f181;
+    border-radius: 50%;
+}
+
+#treeIconButton{
+    border: none;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 15vw;
+}
+
+
+#loginProfile:hover ~ .circleText1 span{
+    transition: 1s;
+    color: black;
+}
+#aboutUs:hover ~ .circleText2 span{
+    transition: 1s;
+    color: black;
+}
+#goingGreen:hover ~ .circleText3 span{
+    transition: 1s;
+    color: black;
+}
+#inbox:hover ~ .circleText4 span{
+    transition: 1s;
+    color: black;
+}
+
+#loginProfile{
+    position: absolute;
+    top: calc(50vh - 26vw);
+    left: -4vw;
+    transform: rotate(51deg);
+    width: 45vw;
+    height: 45vw;
+    border-bottom-left-radius: 45vw;
+}
+
+#aboutUs{
+    position: absolute;
+    top: calc(50vh - 50.4vw);
+    left: 36vw;
+    transform: rotate(135deg);
+    width: 27vw;
+    height: 27vw;
+    border-bottom-left-radius: 35vw;
+}
+
+#goingGreen{
+    position: absolute;
+    top: calc(50vh - 26.5vw);
+    left: 68vw;
+    transform: rotate(206deg);
+    width: 32vw;
+    height: 32vw;
+    border-bottom-left-radius: 40vw;
+}
+
+#inbox{
+    position: absolute;
+    top: calc(50vh + 14.4vw);
+    left: 71vw;
+    transform: rotate(262deg);
+    width: 20vw;
+    height: 20vw;
+    border-bottom-left-radius: 35vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .circle{
+        width: 75vh;
+        height: 75vh;
+    }
+    .circleMenu{
+        width: 90vh;
+        height: 90vh;
+    }
+    .circleText1, .circleText2, .circleText3, .circleText4 {
+        top: 7.3%;
+        font-size: 4vh;
+    }
+    .circleText1 span, .circleText2 span, .circleText3 span, .circleText4 span {
+        width: 2vh;
+        height: 43vh;
+    }
+    #loginProfile{
+        top: 23.5vh;
+        left: calc(50vw - 53vh);
+        width: 45vh;
+        height: 45vh;
+    }
+    #aboutUs{
+        top: -0.5vh;
+        left: calc(50vw - 15vh);
+        width: 27vh;
+        height: 27vh;
+    }
+    #goingGreen{
+        top: 23vh;
+        left: calc(50vw + 17vh);
+        width: 32vh;
+        height: 32vh;
+    }
+    #inbox{
+        top: 64vh;
+        left: calc(50vw + 21vh);
+        width: 20vh;
+        height: 20vh;
+    }
+}
+
+.register{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.memberSystem input{
+    margin-bottom: 6px;
+}
+
+.memberSystem input, select{
+    color: #019e7c;
+    box-shadow: none;
+    outline: none;
+}
+
+.loginSystem input::placeholder{
+    color: rgb(243, 233, 233);
+    font-size: 8px;
+}
+
+.login{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -45%);
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.location{
+    height: 23px;
+    width: 165px;
+}
+
+#submit{
+    color: white;
+    margin-top: 5px;
+    margin-left: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #019e7c;
+    border: 1px solid #019e7c;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.profile{
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+#signOut{
+    position: absolute;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(131, 128, 128);
+    background-color: #14d6ac;
+    border: 2px solid #14d6ac;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    transition: 1s;
+    z-index: 2;
+}
+
+#signOut:hover{
+    background-color: #169e81; 
+    color: white;
+}
+
+#homeButton{
+    color: rgb(131, 128, 128);
+    background-color: #14d6ac;
+    border: 2px solid #14d6ac;
+    border-radius: 15px;
+    width: 10.5vw;
+    height: 5.2vw;
+    font-size: 2.9vw;
+    transition: 1s;
+    position: absolute;
+    left: 50%;
+    top: calc(50vh + 38.5vw);
+    transform: translate(-50%);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+#homeButton:hover{
+    background-color: #169e81; 
+}
+
+.us{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 67vw;
+    height: 67vw;
+    border-radius: 50%;
+    text-align: center;
+    overflow: scroll;
+}
+
+.us::-webkit-scrollbar {
+    display: none;
+}
+.us {
+    -ms-overflow-style: none;
+}
+
+.home{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vw;
+    height: 65vw;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.goingGreenPage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 67vw;
+    height: 67vw;
+    border-radius: 50%;
+    overflow: scroll;
+    text-align: center;
+    padding: 20px;
+}
+
+.goingGreenPage::-webkit-scrollbar {
+    display: none;
+}
+.goingGreenPage {
+    -ms-overflow-style: none;
+}
+
+@media only screen and (orientation: landscape){
+    .us{
+        width: 67vh;
+        height: 67vh;
+    }
+    #homeButton{
+        top: calc(50vh + 38.2vh);
+        width: 10.5vh;
+        height: 5.2vh;
+        font-size: 2.9vh;
+    }
+    .home{
+        width: 65vh;
+        height: 65vh;
+    }
+    .goingGreenPage{
+        width: 67vh;
+        height: 67vh;
+    }
+}
+
+#mainTitle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:  #14d6ac;
+    opacity: 1;
+}
+
+#plusSign{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -75%);
+    color:  #14d6ac;
+    font-size: 50vw;
+    opacity: 0.2;
+}
+
+@media only screen and (orientation: landscape){
+    #plusSign{
+        font-size: 50vh;
+    }
+}
+
+.activityButtons button{
+    border: none;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    z-index: 3;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.activityButtons button:hover{
+    background-color: rgba(235, 217, 217, 0.521);
+}
+
+.activityButtons img{
+    z-index: 1;
+}
+
+#bus, #busIcon{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(-70%, -70%);
+    width: 18vw;
+    height: 11vw;
+}
+
+#carpool, #carpoolIcon{
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    transform: translate(-30%, -70%);
+    width: 20vw;
+    height: 12vw;
+}
+
+#train, #trainIcon{
+    position: absolute;
+    left: 30%;
+    top: 74%;
+    transform: translate(-70%, -26%);
+    width: 20vw;
+    height: 13vw;
+}
+
+#bike, #bikeIcon{
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    transform: translate(-30%, -30%);
+    width: 18vw;
+    height: 15vw;
+}
+
+@media only screen and (orientation: landscape){
+    #bus, #busIcon{
+        width: 18vh;
+        height: 11vh;
+    }
+    
+    #carpool, #carpoolIcon{
+        width: 20vh;
+        height: 12vh;
+    }
+    
+    #train, #trainIcon{
+        width: 20vh;
+        height: 13vh;
+    }
+    
+    #bike, #bikeIcon{
+        width: 18vh;
+        height: 15vh;
+    }
+    
+}
+
+#accountabilitySubmit{
+    color: white;
+    background-color: #14d6ac;
+    border: 2px solid #14d6ac;
+    border-radius: 15px;
+    width: 12.5vw;
+    height: 5.2vw;
+    font-size: 2vw;
+    transition: 1s;
+    position: absolute;
+    left: 50%;
+    top: calc(50vh + 5.5vw);
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+#accountabilitySubmit:hover{
+    background-color: #05775e;
+    border: 1px solid #06b690;
+    transition: 1s;
+}
+
+#submitForm {
+    z-index: 3;
+}
+
+#carSubmit label, #busSubmit label, #trainSubmit label, #bikeSubmit label{
+    font-size: 2vh;
+}
+
+#carSubmit input, #busSubmit input, #trainSubmit input, #bikeSubmit input{
+    margin: 7px;
+    resize: vertical;
+    height: 4vh;
+    resize: horizontal;
+    width: 25vh;
+    border: 1px solid #05775e;
+    padding: 2px;
+    margin: 10px;
+}
+
+#carSubmit input::placeholder, #busSubmit input::placeholder, #trainSubmit input::placeholder, #bikeSubmit input::placeholder{
+    color: lightgray;
+}
+
+#verificationSent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #06b690;
+    display: none;
+}
+
+@media only screen and (orientation: landscape){
+    #accountabilitySubmit{
+        top: calc(50vh + 12.2vh);
+        width: 10.5vh;
+        height: 5.2vh;
+        font-size: 2vh;
+    }
+    #carSubmit label, #busSubmit label, #trainSubmit label, #bikeSubmit label{
+        font-size: 2vw;
+    }
+    
+    #carSubmit input, #busSubmit input, #trainSubmit input, #bikeSubmit input{
+        resize: vertical;
+        height: 2.4vw;
+        resize: horizontal;
+        width: 17vw;
+    }
+    
+}
+
+#leaderBoard{
+    width: 100%;
+    height: 100%;
+}
+
+#homeButton2{
+    color: rgb(131, 128, 128);
+    background: none;
+    border: none;
+    border-radius: 15px;
+    width: 5.2vw;
+    height: 5.2vw;
+    font-size: 2.9vw;
+    transition: 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    line-height: 5px;;
+}
+
+#homeButton2:hover{
+    font-size: 4vw;
+}
+
+#LeaderboardBackButton:hover{
+    background: #05775e;
+    color: white;
+    transition: 1s;
+}
+
+#leaderboardPage{
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    border-top-left-radius: 20%;
+    color: lightgray;
+    background-color:#069e7d;
+    margin:0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#addCompetitionsButton{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    border: none;
+    background-color: #056e57;
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: white;  
+    padding: 10px;
+    width: 20vw;
+    height: 7vw;
+}
+
+#ViewCompetitionsButton:hover{
+    background-color: #069e7d;
+}
+
+#ViewCompetitionsButton{
+    position: absolute;
+    top: calc(19vh + 20px);
+    right: 0vh;
+    border: none;
+    background-color: #056e57;
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: white;  
+    padding: 10px;
+    width: 20vw;
+    height: 7vw;
+}
+
+#addCompetitionsButton:hover{
+    background-color: #069e7d;
+}
+
+.sideMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #056e57;
+}
+
+
+#adding {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(-70, -70%);
+    text-align: center;
+}
+
+#adding label{
+    font-size: 20px;
+}
+
+#adding input{
+    margin: 7px;
+    resize: vertical;
+    height: 6vh;
+    resize: horizontal;
+    width: 30vh;
+    border: 1px solid #05775e;
+    padding-left: 9px;
+    margin: 10px;
+}
+
+#addingSubmit{
+    color: white;
+    background-color: #14d6ac;
+    border: 2px solid #14d6ac;
+    border-radius: 15px;
+    width: 12.5vw;
+    height: 5.2vw;
+    font-size: 2vw;
+    transition: 1s;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+#addingSubmit:hover{
+    background-color: #05775e;
+    border: 1px solid #06b690;
+    transition: 1s;
+}
+
+#LeaderBoards {
+    position: absolute;
+    left: 45%;
+    transform: translate(-55%);
+}
+
+#created{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color: white;
+    transform: translate(-55%, -50%);
+    display: none;
+}
+
+#anotherOne{
+    color: white;
+    background-color: #14d6ac;
+    border: 2px solid #14d6ac;
+    border-radius: 15px;
+    width: 12.5vw;
+    height: 5.2vw;
+    font-size: 2vw;
+    transition: 1s;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    transform: translate(-55%);
+    transition: 1s;
+    display: none;
+}
+
+#anotherOne:hover{
+    background-color: #05775e;
+    border: 1px solid #06b690;
+    transition: 1s;
+}
+
+/* ########################## My Forest ########################*/
+#myForestPage{
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    border-top-left-radius: 20%;
+    color: lightgray;
+    background-color:#069e7d;
+    margin:0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#myForestTitle{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translate(-65%, -70%);
+}
+
+#score{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-65%, -75%);
+}
+
+#homeButton3{
+    color: rgb(131, 128, 128);
+    background: none;
+    border: none;
+    border-radius: 15px;
+    width: 5.2vw;
+    height: 5.2vw;
+    font-size: 2.9vw;
+    transition: 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    line-height: 5px;
+    z-index: 7;
+}
+
+#homeButton3:hover{
+    font-size: 4vw;
+}
+
+#titleComp {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+#userComp {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+
+#competition{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    transform: translate(-55%);
+    background-color: #05775e;
+    width: 25vw;
+    height: 62vh;
+    padding: 15px;
+}
+
+#user hr{
+    width: 100vw;
+}
+
+#myTree{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0vh;
+    width: 80vw;
+    height: 100vh;
+}
